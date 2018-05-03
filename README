@@ -1,0 +1,15 @@
+## 使用
+
+1.将本文件夹内文件放入 ```src/modules``` 里，运行 ``` install.h ```
+
+2.在 ```src/modules/load-module.cpp ``` 加入以下部分
+
+```cpp
+
+#include "module_msgsync.h"
+
+install_msgsync_modules(res); // 这句放到 install_modules() 函数里
+
+```
+
+3.按照原有的 Makefile 编译
