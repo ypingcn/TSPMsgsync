@@ -12,4 +12,8 @@ install_msgsync_modules(res); // 这句放到 install_modules() 函数里
 
 ```
 
-3.按照原有的 Makefile 编译
+3.修改 modules 的 Makefile 中 OTHER_MODULE_SO 为外部依赖的路径
+
+4.修改 Makefile 中 OTHER_MODULE_SO 为外部依赖的路径
+
+5.按照原有的 Makefile 编译
